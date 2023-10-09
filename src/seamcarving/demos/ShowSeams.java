@@ -29,7 +29,7 @@ public class ShowSeams {
     }
 
     public static void main(String[] args) {
-        Picture picture = loadPicture("HJoceanSmall.png");
+        Picture picture = loadPicture("IMG_8047 Small.jpeg");
         SeamCarver sc = new SeamCarver(picture, new DualGradientEnergyFunction(), new DijkstraSeamFinder());
         main(sc, picture);
     }

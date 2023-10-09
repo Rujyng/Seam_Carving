@@ -12,10 +12,10 @@ import java.util.List;
  *  Some utility functions for testing SeamCarver.
  */
 public class PictureUtils {
-    public static final Path IMAGE_DIR = Path.of("seamcarving/data");
+    public static final Path IMAGE_DIR = Path.of("Photos/");
 
     public static Picture loadPicture(String filename) {
-        return new Picture(IMAGE_DIR.resolve(filename).toFile());
+        return new Picture("Photos/" + filename);
     }
 
     /** Creates a random W-by-H picture. */

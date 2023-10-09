@@ -1,9 +1,9 @@
 package graphs.shortestpaths;
 
-import priorityqueues.ExtrinsicMinPQ;
-import priorityqueues.NaiveMinPQ;
 import graphs.BaseEdge;
 import graphs.Graph;
+import graphs.priorityqueues.ExtrinsicMinPQ;
+import graphs.priorityqueues.NaiveMinPQ;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -28,12 +28,6 @@ public class DijkstraShortestPathFinder<G extends Graph<V, E>, V, E extends Base
          */
 
         //return new ArrayHeapMinPQ<>();
-
-        /*
-        Otherwise, do not change this method.
-        We override this during grading to test your code using our correct implementation so that
-        you don't lose extra points if your implementation is buggy.
-        */
 }
 
     // Returns a (partial) shortest paths tree (a map from vertex to preceding edge)

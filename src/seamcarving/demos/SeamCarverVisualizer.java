@@ -1,10 +1,11 @@
 package seamcarving.demos;
 
-// import edu.princeton.cs.algs4.Picture;
+import edu.princeton.cs.algs4.Picture;
 import seamcarving.DijkstraSeamFinder;
-import seamcarving.energy.DualGradientEnergyFunction;
+import seamcarving.DynamicProgrammingSeamFinder;
 import seamcarving.SeamCarver;
 import seamcarving.Utils.Orientation;
+import seamcarving.energy.DualGradientEnergyFunction;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +16,7 @@ import static seamcarving.Utils.Orientation.HORIZONTAL;
 import static seamcarving.demos.PictureUtils.loadPicture;
 
 public class SeamCarverVisualizer {
-    protected static final String IMAGE_NAME = "HJoceanSmall.png";
+    protected static final String IMAGE_NAME = "IMG_8047 Small.jpeg";
     protected static final int NUM_PIXELS = 150;
     private static final Orientation ORIENTATION = HORIZONTAL;
     JFrame frame;
@@ -87,6 +88,7 @@ public class SeamCarverVisualizer {
 
     public static void main(String[] args) {
         Picture samplePicture = loadPicture(IMAGE_NAME);
+
         SeamCarver sc = new SeamCarver(samplePicture,
             new DualGradientEnergyFunction(),
             new DijkstraSeamFinder());
